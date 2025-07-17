@@ -1,10 +1,10 @@
 # :earth_americas: World Emoji Day 2025 :partying_face:
 
->:grin: :grinning: :dizzy_face: :relieved:  
->:roll_eyes:  
->:stuck_out_tongue_closed_eyes: :zany_face: :exploding_head:  
->:satisfied:  
->:wink: :smile: :blush: :joy:  
+:grin: :grinning: :dizzy_face: :relieved:  
+:roll_eyes:  
+:stuck_out_tongue_closed_eyes: :zany_face: :exploding_head:  
+:satisfied:  
+:wink: :smile: :blush: :joy:  
 
 :sob:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:angry:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:yawning_face: :nerd_face: :vomiting_face:  
 :sleeping: :grimacing:&nbsp;&nbsp;&nbsp;&nbsp;:thinking: :yum:&nbsp;&nbsp;&nbsp;&nbsp;:kissing_heart:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:heart_eyes:  
