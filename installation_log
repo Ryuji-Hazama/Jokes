@@ -1,0 +1,45 @@
+
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         Running command ['umount', '/target/dev'] with allowed return codes [0] (capture=False)
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         finish: cmd-install/stage-curthooks/builtin/cmd-curthooks/installing-kernel: FAIL: installing kernel
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         finish: cmd-install/stage-curthooks/builtin/cmd-curthooks: FAIL: curtin command curthooks
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         Traceback (most recent call last):
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:           File "/snap/ubuntu-desktop-bootstrap/413/lib/python3.10/site-packages/curtin/commands/main.py", line 202, in main
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:             ret = args.func(args)
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:           File "/snap/ubuntu-desktop-bootstrap/413/lib/python3.10/site-packages/curtin/commands/curthooks.py", line 2238, in curthooks
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:             builtin_curthooks(cfg, target, state)
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:           File "/snap/ubuntu-desktop-bootstrap/413/lib/python3.10/site-packages/curtin/commands/curthooks.py", line 2070, in builtin_curthooks
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:             install_kernel(cfg, target)
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:           File "/snap/ubuntu-desktop-bootstrap/413/lib/python3.10/site-packages/curtin/commands/curthooks.py", line 403, in install_kernel
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:             install(kernel_cfg.package)
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:           File "/snap/ubuntu-desktop-bootstrap/413/lib/python3.10/site-packages/curtin/commands/curthooks.py", line 369, in install
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:             distro.install_packages([pkg], target=target, env=env)
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:           File "/snap/ubuntu-desktop-bootstrap/413/lib/python3.10/site-packages/curtin/distro.py", line 473, in install_packages
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:             return install_cmd('install', args=pkglist, opts=opts, target=target,
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:           File "/snap/ubuntu-desktop-bootstrap/413/lib/python3.10/site-packages/curtin/distro.py", line 255, in run_apt_command
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:             cmd_rv = apt_install(mode, args, opts=opts, env=env, target=target,
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:           File "/snap/ubuntu-desktop-bootstrap/413/lib/python3.10/site-packages/curtin/distro.py", line 303, in apt_install
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:             cmd_rv = inchroot.subp(cmd + dl_opts + packages, env=env,
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:           File "/snap/ubuntu-desktop-bootstrap/413/lib/python3.10/site-packages/curtin/util.py", line 843, in subp
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:             return subp(*args, **kwargs)
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:           File "/snap/ubuntu-desktop-bootstrap/413/lib/python3.10/site-packages/curtin/util.py", line 323, in subp
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:             return _subp(*args, **kwargs)
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:           File "/snap/ubuntu-desktop-bootstrap/413/lib/python3.10/site-packages/curtin/util.py", line 172, in _subp
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:             raise ProcessExecutionError(stdout=out, stderr=err,
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         curtin.util.ProcessExecutionError: Unexpected error while running command.
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         Command: ['unshare', '--fork', '--pid', '--mount-proc=/target/proc', '--', 'chroot', '/target', 'apt-get', '--quiet', '--assume-yes', '--option=Dpkg::options::=--force-unsafe-io', '--option=Dpkg::Options::=--force-confold', 'install', '--download-only', 'linux-generic-hwe-24.04']
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         Exit code: 100
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         Reason: -
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         Stdout: ''
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         Stderr: ''
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         Unexpected error while running command.
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         Command: ['unshare', '--fork', '--pid', '--mount-proc=/target/proc', '--', 'chroot', '/target', 'apt-get', '--quiet', '--assume-yes', '--option=Dpkg::options::=--force-unsafe-io', '--option=Dpkg::Options::=--force-confold', 'install', '--download-only', 'linux-generic-hwe-24.04']
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         Exit code: 100
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         Reason: -
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         Stdout: ''
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         Stderr: ''
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]:         
+Sep 06 19:30:23 ubuntu subiquity_log.7413[11018]: Stderr: ''
+Sep 06 19:30:23 ubuntu subiquity_event.7413[7413]:  executing curtin install curthooks step
+Sep 06 19:30:23 ubuntu subiquity_event.7413[7413]: installing system
+Sep 06 19:30:23 ubuntu subiquity_event.7413[7413]: 
+Sep 06 19:30:23 ubuntu subiquity_event.7413[7413]:   curtin command install
